@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Операция "Красный тапок"</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		.box {
+			border: solid white 2px;
+			margin: 0px;
+			padding: 0px;
+			height: 100px;
+			background-color: #6c757d;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+		}
+		body {
+			background-image: url(https://i.ytimg.com/vi/xqMrqpvGQTM/maxresdefault.jpg);
+			background-size: 100% 100%
+		}
+		.hp {
+			width: 650px;
+			height: 40px;
+			background-color: green
+		}
+		.tapok {
+			height: 200px
+		}
+	</style>
+</head>
+<body>
+	<div class="col-11 bg-warning mx-auto mt-5 p-2">
+		<h1 class="text-center">Помоги Димону разминировать тапок</h1>
+		<div class="row">
+			<div class="col-3 bg-danger mx-auto">
+				<p><b>Незнакомец:</b> – Что случилось?</p>
+				<p><b>Димон:</b> – Да меня заминировали, ёпты, если палка разомкнется, я взлечу на воздух.</p>
+				<p><b>Незнакомец:</b> – А кто вас заминировал?</p>
+				<p><b>Димон:</b> – Да какая разница, ёпты.</p>
+				<p><b>Незнакомец:</b> – Надо что сделать?</p>
+				<p><b>Димон:</b> – Дёрнуть меня отсюда, ёпты.</p>
+				<p><b>Незнакомец:</b> – На квадроцикле что ли?</p>
+				<p><b>Димон:</b> – Ага, ёпты, лишь бы я от бомбы ушёл.</p>
+				<p><b>Незнакомец:</b> – Вас дёрнуть или тапок?</p>
+				<p><b>Димон:</b> – Дёрни тапок. Подожди… Вот этот тапок дёргай туда куда-нибудь… Так, а ты ж взлетишь.</p>
+				<p><b>Незнакомец:</b> – Я могу, знаете что сделать, привязать к квадроциклу тапок, и квадроциклом дёрнуть.</p>
+				<p><b>Димон:</b> – Давай, дёргай, я не знаю, ты не пострадаешь?</p>
+				<p><b>Незнакомец:</b> – Надеюсь нет.</p>
+			</div>
+			<div class="col-8 mx-auto">
+				<div class="row">
+					<div class="col-2 box"></div>
+					<div class="col-2 box text-center"><h2>A</h2></div>
+					<div class="col-2 box text-center"><h2>B</h2></div>
+					<div class="col-2 box text-center"><h2>C</h2></div>
+					<div class="col-2 box text-center"><h2>D</h2></div>
+					<div class="col-2 box text-center"><h2>E</h2></div>
+				</div>
+				<div class="row">
+					<div class="col-2 box text-center"><h2>1</h2></div>
+					<div class="col-2 box defeat"></div>
+					<div class="col-2 box nothing"></div>
+					<div class="col-2 box defeat"></div>
+					<div class="col-2 box win"></div>
+					<div class="col-2 box nothing"></div>
+				</div>
+				<div class="row">
+					<div class="col-2 box text-center"><h2>2</h2></div>
+					<div class="col-2 box defeat"></div>
+					<div class="col-2 box nothing"></div>
+					<div class="col-2 box win"></div>
+					<div class="col-2 box defeat"></div>
+					<div class="col-2 box nothing"></div>
+				</div>
+				<div class="row">
+					<div class="col-2 box text-center"><h2>3</h2></div>
+					<div class="col-2 box nothing"></div>
+					<div class="col-2 box nothing"></div>
+					<div class="col-2 box win"></div>
+					<div class="col-2 box defeat"></div>
+					<div class="col-2 box defeat"></div>
+				</div>
+				<div class="row">
+					<div class="col-2 box text-center"><h2>4</h2></div>
+					<div class="col-2 box win"></div>
+					<div class="col-2 box defeat"></div>
+					<div class="col-2 box defeat"></div>
+					<div class="col-2 box nothing"></div>
+					<div class="col-2 box nothing"></div>
+				</div>
+				<div class="row">
+					<div class="col-2 box text-center"><h2>5</h2></div>
+					<div class="col-2 box defeat"></div>
+					<div class="col-2 box nothing"></div>
+					<div class="col-2 box defeat"></div>
+					<div class="col-2 box nothing"></div>
+					<div class="col-2 box win"></div>
+				</div>
+				<div class="row mt-4">
+					<h2>HP</h2>
+					<div class="bg-white ml-3 p-1" style="width: 658px;">
+						<div class="hp"></div>
+					</div>
+				</div>
+				<div class="row mt-4">
+					<h2 class="mt-5">Тапков осталось</h2>
+					<img src="maxresdefault2.png" class="tapok">
+					<img src="maxresdefault2.png" class="tapok">
+					<img src="maxresdefault2.png" class="tapok">
+					<img src="maxresdefault2.png" class="tapok">
+					<img src="maxresdefault2.png" class="tapok">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let win = document.querySelectorAll(".win");
+		let nothing = document.querySelectorAll(".nothing");
+		let defeat = document.querySelectorAll(".defeat");
+		let chet = document.querySelector(".score");
+		let tapki = document.querySelectorAll(".tapok");
+		let hp1 = document.querySelector(".hp");
+		let	hp2 = 650;
+		let defused = 0;
+		for (let i = 0;i < 5;i = i + 1){
+			win[i].onclick = function(){
+				win[i].style.backgroundColor = "green";
+				win[i].style.backgroundImage = "url(maxresdefault.png)";
+				win[i].style.backgroundSize = "100% 100%";
+				tapki[i].style.display = "none"
+				defused = defused + 1;
+				if (defused == 5) {
+					alert("Димон спасен!")
+				}
+			}
+		}
+		for (let i = 0;i < 10;i = i + 1){
+			nothing[i].onclick = function(){
+				nothing[i].style.backgroundColor = "white";
+				nothing[i].style.backgroundImage = "url(https://telegram.org.ru/uploads/posts/2017-05/1495451616_1.jpg)";
+				nothing[i].style.backgroundSize = "100% 100%";
+			}
+		}
+		for (let i = 0;i < 10;i = i + 1){
+			defeat[i].onclick = function(){
+				defeat[i].style.backgroundColor = "white";
+				defeat[i].style.backgroundImage = "url(6c4595b391580ac279011bda2b24152b.png)";
+				defeat[i].style.backgroundSize = "100% 100%";
+				hp2 = hp2 - 130;
+				hp1.style.width = hp2 + "px"
+				if (hp2 == 0) {
+					alert("Димон подорвался!")
+				}
+			}
+		}	
+	</script>
+</body>
+</html>
